@@ -1,0 +1,158 @@
+body {
+  width: 500px;
+  height: 350px;
+  font-family: Segoe UI,Helvetica Neue,Helvetica,Lucida Grande,Arial,Ubuntu,Cantarell,Fira Sans,sans-serif;
+  margin: -1px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #e5ddd5;
+}
+
+body::before {
+  content: '';
+  display: block;
+  opacity: 0.06;
+  background-image: url(https://web.whatsapp.com/img/bg-chat-tile-light_04fcacde539c58cca6745483d4858c52.png);
+  background-repeat: repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.iti__flag {
+  background-image: url("../node_modules/intl-tel-input/build/img/flags.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {
+    background-image: url("../node_modules/intl-tel-input/build/img/flags@2x.png");
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 22px;
+  color: #525252;
+  font-weight: 400;
+}
+
+.content {
+  position: relative;
+  flex: 1;
+  text-align: center;
+  font-size: 18px;
+}
+
+.content .logo {
+  padding: 10px 0;
+}
+
+.content .logo img {
+  width: 70px;
+}
+
+.content h2 {
+  font-size: 18px;
+  color: #525252;
+  font-weight: 400;
+}
+
+.content #phone {
+  font-size: 18px;
+  padding: 10px;
+  height: 42px;
+  width: 380px;
+  border: none;
+  border: 1px solid #fff;
+  border-radius: 21px;
+  outline: none;
+  font-family: inherit;
+}
+
+.content .iti--separate-dial-code .iti__selected-flag {
+  border-radius: 21px 0 0 21px;
+  background: #fff;
+  outline: none;
+  padding-left: 10px;
+}
+
+.content .iti__country-list {
+  font-size: 14px;
+  width: 345px;
+  left: 19px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 62px;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+}
+
+.footer textarea {
+  padding: 9px 12px 11px;
+  margin: 5px 10px;
+  height: 42px;
+  resize: none;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 21px;
+  flex: 1 1 auto;
+  width: inherit;
+  min-width: 0;
+  min-height: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  outline: none;
+  color: #4a4a4a;
+  font-family: inherit;
+}
+
+.footer #send {
+  margin-top: 4px;
+  color: #919191;
+  opacity: 0.9;
+  outline: none;
+  border: 0;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  flex: none;
+  min-height: 52px;
+  background: none;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.options {
+  display: inline-block;
+  position: absolute;
+  font-size: 20px;
+  right: 10px;
+  top: 5px;
+  color: #aaa;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+body:hover .options {
+  opacity: 1;
+}

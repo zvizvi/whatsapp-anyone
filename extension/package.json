@@ -1,0 +1,13 @@
+{
+  "name": "whatsapp-anyone-ext",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "axios-jsonp": "^1.0.4",
+    "intl-tel-input": "^17.0.12"
+  },
+  "devDependencies": {},
+  "author": "zvizvi5@outlook.com"
+}

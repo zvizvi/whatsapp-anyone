@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en_US">
+
+<head>
+  <meta charset="utf-8">
+  <title>WhatsApp Anyone</title>
+  <link rel="stylesheet" type="text/css" href="../css/popup.css">
+  <link rel="stylesheet" href="../node_modules/intl-tel-input/build/css/intlTelInput.min.css">
+  <script src="../node_modules/intl-tel-input/build/js/intlTelInput.min.js"></script>
+  <script src="../node_modules/axios/dist/axios.min.js"></script>
+  <script src="../node_modules/axios-jsonp/dist/index.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <h1>WhatsApp Anyone</h1>
+  </div>
+  <div class="content">
+    <div class="logo">
+      <img src="../img/whatsapp.png">
+    </div>
+    <div>
+      <h2>Input Phone Number</h2>
+      <input type="tel" id="phone" maxlength="25">
+    </div>
+  </div>
+  <div class="footer">
+    <textarea placeholder="Type some message..." id="message"></textarea>
+    <button class="btn" id="send"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+        <path fill="currentColor" d="M1.101 21.757L23.8 12.028 1.101 2.3l.011 7.912 13.623 1.816-13.623 1.817-.011 7.912z"></path>
+      </svg></button>
+  </div>
+  <a class="options">
+    <i class="zmdi zmdi-settings"></i>
+  </a>
+  <script src="../js/popup.js"></script>
+</body>
+
+</html>
