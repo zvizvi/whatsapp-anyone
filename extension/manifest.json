@@ -7,6 +7,18 @@
     "default_icon": "img/icon16.png",
     "default_popup": "html/popup.html"
   },
+  "content_scripts": [
+    {
+      "all_frames": false,
+      "matches": [
+        "https://web.whatsapp.com/*"
+      ],
+      "js": [
+        "js/inject.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
   "icons": {
     "128": "img/icon128.png",
     "96": "img/icon96.png",
